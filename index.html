@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Photo-Editor</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://rawcdn.githack.com/kousik19/foto.js/d604b02c69b6f037875bc4a3050b85d776dc4659/foto.js"></script>
+    </head>
+    <body>
+        <div class="file_ypload-section" onclick="selectImage()">
+        <input id="foto-file" type="file">
+    Select Image</div>
+    <div class="img-container">
+        <img id="foto-image" class="image">
+    </div>
+    <div class="buttons-sections">
+        <table class="buttons-table">
+            <tr>
+                <td><button class="operation-btn" onclick="makeGrayScale()">GrayScale</button></td>
+                <td><button class="operation-btn" onclick="makeBrighter()">Brighter</button></td>
+                <td><button class="operation-btn" onclick="makeDarker()">Darker</button></td>
+            </tr>
+            <tr>
+                <td><button class="operation-btn" onclick="makeBlur()">Blur</button></td>
+                <td><button class="operation-btn" onclick="makeEmboss()">Emboss</button></td>
+                <td><button class="operation-btn" onclick="makeSharp()">Sharp</button></td>
+            </tr>
+            <tr>
+                <td colspan="3"><button class="operation-btn download-btn" onclick="download()">Download</button></td>
+            </tr>
+        </table>
+    </div>
+    </body>
+    <script src="main.js"></script>
+</html>
